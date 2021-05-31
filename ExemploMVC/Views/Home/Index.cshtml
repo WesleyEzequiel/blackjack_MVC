@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "IMC";
+}
+
+<div class="text-center">
+    <h1 class="display-4">bem vindo</h1>
+    <p>aprendendo sobre... <a href="https://docs.microsoft.com/aspnet/core">MVC</a>.</p>
+</div>
+
+<form class="container" id="formulario">
+    <div class="col-md-12">
+        <fieldset class="form-group">
+            <legend>Calculo IMC</legend>
+
+            <label for="peso"> Peso:</label>
+            <input type="text" name="peso" class="form-control" />
+
+            <label for="altura"> Altura:</label>
+            <input type="text" name="altura" class="form-control" />
+
+            <label for="imc">IMC: </label>
+            <input type="text" name="imc" class="form-control" disabled ="disabled"/>
+
+            <br/>
+
+            <button type="button" class="btn btn-success" onclick="calcularIMC()">calcular IMC</button>
+
+
+        </fieldset>
+    </div>
+</form>
